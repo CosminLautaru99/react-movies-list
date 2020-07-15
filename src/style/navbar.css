@@ -1,0 +1,44 @@
+/* Navigation */
+
+header.header-banner {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	height: 120px;
+	padding-top: 10px;
+}
+header.header-banner img.header-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ced3dc;
+	border: 1px solid black;
+	border-radius: 20%;
+	width: 60px;
+	height: 60px;
+	box-shadow: black;
+}
+ul.navigation {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.navigation li.nav-element {
+	color: #ced3dc;
+	padding: 8px 8px;
+	margin: 5px 10px;
+	font-family: "Dosis", sans-serif;
+	font-size: 18px;
+	filter: drop-shadow(0px 1px 1px black);
+}
+ul.navigation li.nav-element a {
+	text-decoration: none;
+	color: #ced3dc;
+}
+ul.navigation li.active {
+	color: white;
+	border: 1px solid white;
+	filter: drop-shadow(0 1 1 #403d39);
+}
+/*  */

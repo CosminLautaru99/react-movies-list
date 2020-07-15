@@ -1,4 +1,5 @@
 import React from "react"
+/* import findIndex from "./Catalogue" */
 
 export default function MovieCard({ movie }) {
 	return (
@@ -19,6 +20,9 @@ export default function MovieCard({ movie }) {
 					<small>RATING: {movie.vote_average}</small>
 				</p>
 				<p className="card-desc">{movie.overview}</p>
+				{/* <button className="add-button" onClick={findIndex}>
+					Add Movie
+				</button> */}
 			</div>
 		</div>
 	)

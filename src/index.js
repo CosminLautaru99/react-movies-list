@@ -1,16 +1,30 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./App.css"
-import "./index.css"
-import SearchMovies from "./SearchMovies"
+import "./style/App.css"
+import "./style/index.css"
+import "./style/navbar.css"
+import SearchMovies from "./js/SearchMovies"
+
+import AddMovies from "./js/AddMovies"
+
+import { BrowserRouter, Route, Switch } from "react-router-dom"
+
+import Catalogue from "./js/Catalogue"
 
 class Main extends React.Component {
 	render() {
 		return (
-			<div className="container">
-				<h1 className="title">React Movie Search</h1>
-				<SearchMovies />
-			</div>
+			<>
+				<BrowserRouter>
+					<Switch>
+						<Route exact path="/" component={SearchMovies}></Route>
+						<Route path="/Catalogue" component={Catalogue}></Route>
+						{/* <div className="page-containter">
+							<SearchMovies />
+						</div> */}
+					</Switch>
+				</BrowserRouter>
+			</>
 		)
 	}
 }
