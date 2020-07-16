@@ -1,21 +1,9 @@
 import React from "react"
 import logo from "../media/headerlogo.png"
 import { NavLink } from "react-router-dom"
-
-import movies from "./SearchMovies"
-/* import MovieCard from "./MovieCard" */
-/* import movies from "./SearchMovies" */
-/* import SearchMovies from "./SearchMovies" */
+import AddMovies from "./AddMovies"
 
 const Catalogue = () => {
-	function TestFunc() {
-		console.log(movies)
-		return (
-			<>
-				<button onClick={TestFunc}>Click</button>
-			</>
-		)
-	}
 	return (
 		<>
 			<header className="header-banner">
@@ -30,10 +18,7 @@ const Catalogue = () => {
 					<li className="nav-element">Log In</li>
 				</ul>
 			</header>
-
-			<div className="container">
-				<TestFunc />
-			</div>
+			<div className="catalogue" id="card-list"></div>
 		</>
 	)
 }

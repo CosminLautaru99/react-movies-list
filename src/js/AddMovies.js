@@ -1,12 +1,15 @@
-/* import React from "react"
-import movies from "./SearchMovies"
+import React from "react"
+/* import storedMovies from "./storedMoviesVar" */
+/* import GetIndex from "./FindIndex" */
+import storedMovies from "./MovieCardDiv"
 
-export default function testFunc() {
-	console.log(movies.lenght)
+const AddMovies = () => {
+	console.log(storedMovies)
 	return (
 		<>
-			<button onClick={testFunc}>Click</button>
+			<div className="catalogue-list"></div>
 		</>
 	)
 }
- */
+
+export default AddMovies

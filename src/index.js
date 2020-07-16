@@ -5,7 +5,7 @@ import "./style/index.css"
 import "./style/navbar.css"
 import SearchMovies from "./js/SearchMovies"
 
-import AddMovies from "./js/AddMovies"
+/* import AddMovies from "./js/AddMovies" */
 
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 

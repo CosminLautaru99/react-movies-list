@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import MovieCard from "./MovieCard"
 import logo from "../media/headerlogo.png"
 import { Link } from "react-router-dom"
+import storedMovies from "./MovieCardDiv"
+/* import FindIndex from "./FindIndex" */
 
 export default function SearchMovies() {
 	//states- input query, movies
@@ -18,8 +20,11 @@ export default function SearchMovies() {
 		try {
 			const res = await fetch(url)
 			const data = await res.json()
-
-			/* console.log(data.results) */
+			console.log(data)
+			for (let i = 0; i < data.results.length; i++) {
+				storedMovies.push(data.results[0])
+			}
+			console.log(storedMovies)
 			setMovies(data.results)
 		} catch (err) {
 			console.error(err)

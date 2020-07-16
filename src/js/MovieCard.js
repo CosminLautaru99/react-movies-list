@@ -1,5 +1,6 @@
 import React from "react"
-/* import findIndex from "./Catalogue" */
+import AddMovies from "./AddMovies"
+import FindIndex from "./FindIndex"
 
 export default function MovieCard({ movie }) {
 	return (
@@ -20,9 +21,10 @@ export default function MovieCard({ movie }) {
 					<small>RATING: {movie.vote_average}</small>
 				</p>
 				<p className="card-desc">{movie.overview}</p>
-				{/* <button className="add-button" onClick={findIndex}>
-					Add Movie
-				</button> */}
+				<FindIndex />
+				<button className="add-button" onClick={AddMovies}>
+					Add Movie To Your List
+				</button>
 			</div>
 		</div>
 	)
